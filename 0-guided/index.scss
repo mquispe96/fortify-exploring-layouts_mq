@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+}
+.container{
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+header{
+    grid-column: 1/ span 3;
+    grid-row: 1/span 1;
+    background: #D6F6DD;
+}
+nav{
+    grid-column: 1/ span 1;
+    grid-row: 2/span 1;
+    background: #DAC4F7;
+}
+main{
+    grid-column: 2/ span 1;
+    grid-row: 2/span 1;
+    background: #F4989C;
+}
+aside{
+    grid-column: 3/ span 1;
+    grid-row: 2/span 1;
+    background: #EBD2B4;
+}
+footer{
+    grid-column: 1/ span 3;
+    grid-row: 3/span 1;
+    background: #ACECF7;
+}
+
+@media (min-width: 768px) { 
+    header{
+        background: blue;
+    }
+    nav{
+        background: green;
+    }
+    main{
+        background: white;
+    }
+    aside{
+        background: yellow;
+    }
+    footer{
+        background: red;
+    }
+}
+
+@media (max-width: 767px) { 
+    header{
+        background: white;
+    }
+    nav{
+        background: gray;
+    }
+    main{
+        background: pink;
+    }
+    aside{
+        background: orange;
+    }
+    footer{
+        background: turquoise;
+    }
+}
+
+@media (max-width: 575.98px) {
+    /* CSS rules for extra small devices like smaller smartphones */
+    header{
+        background: blue;
+    }
+    nav{
+        background: green;
+    }
+    main{
+        background: white;
+    }
+    aside{
+        background: yellow;
+    }
+    footer{
+        background: red;
+    }
+  }
+  
+  /* Small Devices (Small phones, ≥576px) - Example: Samsung Galaxy S10e */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+
+  }
+  
+  /* Medium Devices (Tablets, ≥768px) - Example: iPad */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules for medium devices like tablets */
+  }
+  
+  /* Large Devices (Desktops, ≥992px) - Example: iPad Pro */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS rules for large devices (small desktops, large tablets) */
+  }
+  
+  /* Extra Large Devices (Large desktops, ≥1200px) - Example: MacBook Pro 15" */
+  @media (min-width: 1200px) {
+    /* CSS rules for extra large devices (large desktops) */
+  }
